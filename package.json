@@ -1,0 +1,30 @@
+{
+  "name": "wiki",
+  "version": "1.0.12",
+  "description": "angular.beta malo vise 15",
+  "author": "beliYu",
+  "license": "ISC",
+  "dependencies": {
+    "angular2": "2.0.0-beta.15",
+    "bootstrap": "^3.3.6",
+    "es6-promise": "^3.0.2",
+    "es6-shim": "^0.35.0",
+    "reflect-metadata": "0.1.2",
+    "rxjs": "5.0.0-beta.2",
+    "systemjs": "0.19.x",
+    "zone.js": "0.6.10"
+  },
+  "devDependencies": {
+    "concurrently": "^2.0.0",
+    "jasmine-core": "2.4.1",
+    "typings": "^0.7.9"
+  },
+  "scripts": {
+    "tsc": "tsc -p src -w",
+    "start": "live-server --open=src --ignore=json",
+    "json": "json-server json/db.json",
+    "typings": "typings",
+    "test": "live-server --open=src/unit-test.html",
+    "postinstall": "typings install"
+  }
+}

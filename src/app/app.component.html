@@ -1,0 +1,33 @@
+<div id="search" class="wrapper">
+    <a href="http://en.wikipedia.org/wiki/Special:Random"
+       target="_blank" class="white-text">Click here for a random article</a><br/>
+
+    <div>
+        <img src="shield-with-beta-200.png"
+             style="margin-top:3px" width="165" height="100" title="Angular 2.o-Beta">
+        <img src="http://icons.iconarchive.com/icons/sykonist/popular-sites/256/Wikipedia-globe-icon.png"
+             width="256" height="256" alt="Wikipedia globe icon" title="Wikipedia globe icon">
+        <img style="margin-left:50px" title="ReactiveX 5.o-Beta" width="90" height="90"
+             src="https://avatars.githubusercontent.com/u/984368?size=100">
+    </div>
+    <form ng-submit="search()">
+        <input type="text" id="aa" placeholder="Enter search term ..."/>
+    </form>
+</div>
+<div class="wrapper" *ngIf="result.length">
+    <ul><a href="{{r.page}}" *ngFor="#r of result">
+        <li>
+            <div class="row">
+                <img src="{{r.tnsrc}}" class="col-md-1">
+
+                <div class="col-md-11 ">
+                    <h1>{{r.title}}</h1>
+
+                    <p>{{r.body}}</p>
+                </div>
+            </div>
+        </li>
+    </a></ul>
+</div>
+
+
