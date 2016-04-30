@@ -18,7 +18,7 @@
     <ul><a href="{{r.page}}" *ngFor="let r of result">
         <li>
             <div class="row">
-                <img src="{{r.tnsrc}}" class="col-md-1">
+                <img [src]="r.tnsrc" class="col-md-1">
 
                 <div class="col-md-11 ">
                     <h1>{{r.title}}</h1>
