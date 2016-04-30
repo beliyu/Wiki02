@@ -1,7 +1,7 @@
 # Wikipedia Viewer
 ## You can search Wikipedia entries in a search box and see the resulting Wikipedia entries..
 
-Wikipedia Viewer is an Angular 2.0-beta15 with typescript implementation of ReactiveX 5.0-beta.
+Wikipedia Viewer is an Angular 2.0.0-beta.17 with typescript implementation of ReactiveX 5.0-beta.6.
 
 Innovating my old project! Add new module versions, typescript with typings, new cool things from RxJS 5.0 ...
 
