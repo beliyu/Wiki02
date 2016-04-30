@@ -15,7 +15,7 @@
     </form>
 </div>
 <div class="wrapper" *ngIf="result.length">
-    <ul><a href="{{r.page}}" *ngFor="#r of result">
+    <ul><a href="{{r.page}}" *ngFor="let r of result">
         <li>
             <div class="row">
                 <img src="{{r.tnsrc}}" class="col-md-1">
